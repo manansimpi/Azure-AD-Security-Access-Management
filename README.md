@@ -1,4 +1,4 @@
-# Azure-AD-Security-Access-Management
+# Azure-AD-Security-Access-Management(Part 1)
 ## Objective
    - Enhance the security and management of identities in Azure Active Directory (Azure AD) by implementing a structured approach to access control, risk-based authentication, privileged identity management, and continuous monitoring. This project aims to establish a robust identity protection framework that minimizes security risks, enforces least privilege access, and ensures compliance with best practices for securing cloud environments.
 
