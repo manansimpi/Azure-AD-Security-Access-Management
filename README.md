@@ -151,12 +151,68 @@ Creating new users that can be assigned to relevant groups so that we can delega
 
 
 
-Verified role assignments by logging in with test user accounts.
+## Verification & Testing
 
-Verification & Testing
+### Tested user access and role assignments by logging in with different user accounts.
 
-Tested user access and role assignments by logging in with different user accounts.
+- Logging from **NewUser** with the Global Administrator role and trying to create a new temporary Test User.
 
-Ensured that users with limited roles cannot access restricted resources.
+![Screenshot 2025-01-29 210337](https://github.com/user-attachments/assets/81c6eb1e-9711-4058-ae81-7ef6f7e53031)
 
-Validated that RBAC policies were enforced properly.
+<br><br>
+
+![Screenshot 2025-01-29 212627](https://github.com/user-attachments/assets/f9353c7f-0538-41f8-8d34-401083aaed08)
+
+<br><br>
+
+### Ensured that users with limited roles cannot perform restricted tasks.
+
+- Tried to do the same from User1(U1) with Global Reader but failed.
+  
+![Screenshot 2025-01-29 213225](https://github.com/user-attachments/assets/65d9c4de-c672-4a27-91be-738d3d4e8131)
+
+
+
+
+
+
+
+### Validating if RBAC policies were enforced properly.
+
+- But first, let's give Reader Access to U1(User1) so that it can access the resource of that resource group. In our case, we need to test if we can Start and Stop the Virtual Machine so we need access to the Resource group and the VM running.
+
+![Screenshot 2025-01-29 221049](https://github.com/user-attachments/assets/2c2712f0-6009-49a5-9c78-b0e7c411fbfe)
+
+<br><br>
+
+![Screenshot 2025-01-29 221110](https://github.com/user-attachments/assets/fb8a638f-ffbf-4fda-9338-0d26de8b02ba)
+
+<br><br>
+
+![Screenshot 2025-01-29 221211](https://github.com/user-attachments/assets/1cec3795-3cc7-4bb5-ac18-57f73eff9949)
+
+<br><br>
+
+![Screenshot 2025-01-29 221211](https://github.com/user-attachments/assets/b15ac0ba-07a2-4a1a-9355-ca38b5108d58)
+
+<br><br>
+
+- So now the Subscription and the VM runnning is visible from the User1(U1) user and testing to Stop and Start it.
+
+![Screenshot 2025-01-29 222039](https://github.com/user-attachments/assets/d67e8b6d-5c16-4c8a-940a-e018d5dafc14)
+
+<br><br>
+
+![Screenshot 2025-01-29 222055](https://github.com/user-attachments/assets/7cc6ea92-4ee0-4cae-bcc2-b70b954a0509)
+
+<br><br>
+
+![Screenshot 2025-01-29 222444](https://github.com/user-attachments/assets/8728f6ac-91f1-4139-b27b-5cae64dbf933)
+
+- Now trying to delete the VM which obviously fails since we just have provided the permissions to Start and Stop the Vm.
+
+![Screenshot 2025-01-29 222604](https://github.com/user-attachments/assets/2d603e37-8fc7-47ac-a8ca-32a58a202641)
+
+
+
+
